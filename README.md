@@ -26,6 +26,7 @@ Judging from these examples, I would say PQ is a very powerful tool to have avai
 
 
 IV. FURTHER READING
+
 These are a couple of articles that are helpful and further explain this topic.
 
 https://www.fluentcpp.com/2018/03/20/heaps-and-priority-queues-in-c-part-3-queues-and-priority-queues/
