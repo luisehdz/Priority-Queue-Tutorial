@@ -10,9 +10,12 @@ II. HOW DOES IT WORK?
 A priority queue(PQ) is the same thing as a normal queue except it has a special feature to it. A PQ has the special ability to have any element inside of it "skip" the line.
 A queue usually has the FIFO(First in First Out) approach but a PQ does not. PQ's add a level of priority to elements and choose to differentiate data using that approach.
 This information is usually stored in a Vector to compare elements with another to determine the "largest element." How one would go about implementing a PQ is the same way you would approach a regular queue.
-The STL library for queue contains all the information you need to create one. All you need is the keyword "priority_queue <datatype you want> variable name" and you'll have created a PQ.
-Now all you have to do is stuff data inside your PQ and create a way to print out the information. I recommend using a while loop to check if the PQ is empty.
-By default, the PQ will pop larger elements first and then smaller elements later. One solution to this is to modify the parameter of the PQ.
+The STL library for queue contains all the information you need to create one. Since a PQ is derived from the queue library it has access to all the functions a regular queue would have.
+To push data into the queue we will use the push() function and to access the next element we will use the pop() functions.
+
+
+All you need is the keyword "priority_queue <datatype int or any valid datatype> variable name" and you'll have created a PQ.Now all you have to do is stuff data inside your PQ and create a way to print out the information. 
+I recommend using a while loop to check if the PQ is empty. By default, the PQ will pop larger elements first and then smaller elements later. One solution to this is to modify the parameter of the PQ.
 "priority_queue <int, vector<int>, greater<int>> variablename" is how you would set up a PQ that pops the smallest elements first and the then later the larger elements.
 In the code sample provided you can see how all of this is brought together to form a PQ. As for time complexity, a PQ is not a very effective method to use in large quantities of data.
 However, with small quantities of data this is a good data structure to implement and it is easy to use as well!

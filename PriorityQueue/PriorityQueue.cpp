@@ -17,6 +17,7 @@ int main()
 	priority_queue <int, vector<int>, greater<int>> ascendingPQ;
 
 	//This is just pushing numbers into the queue list
+	//Change this variable to descendingPQ if you want to pop them in descending order.
 	ascendingPQ.push(4);
 	ascendingPQ.push(10);
 	ascendingPQ.push(3);
@@ -31,7 +32,7 @@ int main()
 
 void showData(priority_queue <int> pq)
 {
-	//While the priority queue is not empty, we are going to continuously pop items of the queue and print them.
+	//While the priority queue is not empty, we are going to continuously pop items out of the queue and print them.
 	while (!pq.empty())
 	{
 		cout << " " << pq.top();
@@ -42,7 +43,7 @@ void showData(priority_queue <int> pq)
 
 void showData(priority_queue <int, vector<int>, greater<int>> pq)
 {
-	//Same logic as in the previous function except this time it'll pop them in ascending order.
+	//Same logic as in the previous function except this time we will pop them in ascending order.
 	while (!pq.empty())
 	{
 		cout << " " << pq.top();
