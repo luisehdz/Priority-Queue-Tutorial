@@ -14,7 +14,7 @@ The STL library for queue contains all the information you need to create one. S
 To push data into the queue we will use the push() function and to access the next element we will use the pop() functions.
 
 
-All you need is the keyword "priority_queue <datatype int or any valid datatype> variable name" and you'll have created a PQ.Now all you have to do is stuff data inside your PQ and create a way to print out the information. 
+All you need is the keyword "priority_queue <datatype int or any valid datatype> variable name" and you'll have created a PQ. Now all you have to do is stuff data inside your PQ and create a way to print out the information. 
 I recommend using a while loop to check if the PQ is empty. By default, the PQ will pop larger elements first and then smaller elements later. One solution to this is to modify the parameter of the PQ.
 "priority_queue <int, vector<int>, greater<int>> variablename" is how you would set up a PQ that pops the smallest elements first and the then later the larger elements.
 In the code sample provided you can see how all of this is brought together to form a PQ. As for time complexity, a PQ is not a very effective method to use in large quantities of data.
@@ -23,7 +23,7 @@ However, with small quantities of data this is a good data structure to implemen
 III. HOW IS THIS DATA STRUCTURE USEFUL?
 
 Priority Queue's are used alongside of many other data structures and work in tangent with them. A very notable example is in the A* search algorithm.
-A PQ can hold data that the A* search has not gone through yet and can return the smallest heurestic function for the search to go into next.
+A PQ can hold data that the A* search has not gone through yet and can return the smallest heuristic function for the search to go into next.
 Another notable example is in heaps. Heaps are an implementation of PQ's. Operating Systems can utilize PQ in interrupts and check what job has highest priority to complete.
 Judging from these examples, I would say PQ is a very powerful tool to have available to a programmer.
 
